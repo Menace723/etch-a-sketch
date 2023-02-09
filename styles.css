@@ -1,4 +1,6 @@
-body{
+
+body{ 
+    background-image: url(/pictures/pexels-steve-johnson-1509534.jpg);
     display: flex;
     justify-content: center;
     flex-direction: column;
