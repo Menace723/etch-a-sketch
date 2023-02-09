@@ -1,0 +1,39 @@
+body{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+.container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.left-selector {
+    display: flex;
+    justify-content: left;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.size{
+    margin: 10px;
+}
+.black {
+    margin: 10px;
+}
+.random{
+    margin: 10px;
+}
+.clear {
+    margin: 10px;
+}
+
+.right-board {
+    margin-top: 50px;
+    width: 700px;
+    height: 700px;
+    border: 1px solid black;
+}
