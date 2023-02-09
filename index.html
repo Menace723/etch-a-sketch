@@ -9,13 +9,12 @@
     <title>Etch-A-Sketch</title>
 </head>
 <body>
-    <div class="header"><h1>Etch-A-Sketch</h1></div>
     <div class="container">
         <div class="left-selector">
             <div class="size">
                 <label for="size"><h6><strong>Select Canvas Size</strong></h6></label><br>
                 <input type="range" id="size" name="size"
-                    min="1" max="100" list="markers">
+                    min="1" max="100" step="number" list="markers">
 
                     <datalist id="markers">
                         <option value="1" label="1"></option>
@@ -38,6 +37,10 @@
 
         </div>
         <div class="right-board">
+            <div class="title"><p><strong><em>Etch-A-Sketch</em></strong></p></div>
+            <div class="board">
+
+            </div>
 
         </div>
     </div>
