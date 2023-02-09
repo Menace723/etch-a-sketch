@@ -1,6 +1,16 @@
-
+.header {
+    font-family: albas;
+    src: url(ALBAS___.TTF);
+    margin-top: 20px;
+    margin-left: 300px;
+    background-color: rgba(17, 90, 17, 0.74);
+    color: white;
+    padding: 10px;
+    border-radius: 10px;
+}
 body{ 
-    background-image: url(/pictures/pexels-steve-johnson-1509534.jpg);
+    background-image: url(pictures/pexels-steve-johnson-1509534.png);
+    background-size: cover;
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -11,9 +21,12 @@ body{
     flex-direction: row;
     align-items: center;
     justify-content: center;
+    justify-content: space-evenly;
+    
 }
 
 .left-selector {
+    background-color: rgba(255, 255, 255, 0.466);
     display: flex;
     justify-content: left;
     flex-direction: column;
@@ -34,6 +47,7 @@ body{
 }
 
 .right-board {
+    background-color: white;
     margin-top: 50px;
     width: 700px;
     height: 700px;
