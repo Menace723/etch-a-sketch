@@ -13,18 +13,18 @@
         <div class="left-selector">
             <div class="size">
                 <label for="size"><p><strong>Select Canvas Size</strong></p></label><br>
-                <div id="sizeValue" class="size-value">8 x 8</div>
-                <input type="range" id="size" value="8"
-                    min="1" max="100" step="number" >
+                <div id="sizeValue" class="size-value">move to show size</div>
+                <input type="range" id="sizeRange" value="8"
+                    min="1" max="100" step=8 >
             </div>
-            <div class="black"><button class="btn btn-dark">Black</button></div>
-            <div class="random"><button class="btn btn-success">Random</button></div>
-            <div class="clear"><button class="btn btn-light">Clear</button></div>
+            <div class="black"><button class="btn btn-dark" onclick ="setColor('black')" >Black</button></div>
+            <div class="random"><button class="btn btn-success" onclick="setColor('random')" >Random</button></div>
+            <div class="clear"><button class="btn btn-light" onclick="clearBoard()">Clear</button></div>
 
         </div>
         <div class="right-board">
             <div class="title"><p><strong><em>Etch-A-Sketch</em></strong></p></div>
-            <div class="board">
+            <div id="board" class="board">
 
             </div>
 

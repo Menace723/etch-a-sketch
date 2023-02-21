@@ -13,8 +13,8 @@ body{
     align-items: center;
     justify-content: center;
     justify-content: space-evenly;
-    padding: 50px;
-    margin: 50px;
+    padding: 25px;
+    margin: 25px;
     
 }
 
@@ -32,6 +32,9 @@ p {
     font-style: oblique;
     font-weight: bolder;
     text-decoration: solid;
+    -webkit-text-stroke-color: navy;
+    -webkit-text-stroke-width: 1px;
+    text-decoration: underline;
 }
 
 .size{
@@ -56,11 +59,11 @@ p {
 
 .title {
     margin-top: 0px;
-    margin-bottom: 50px;
+    margin-bottom: 0px;
     text-align: center;
     font-family: sans-serif;
-    font-size: 3rem;
-    letter-spacing: 0.15rem;
+    font-size: 40px;
+    letter-spacing: 2.4px;
     text-transform: uppercase;
     color: #fff;
     text-shadow: -4px 4px #ef3550,
@@ -75,7 +78,8 @@ p {
 }
 .board {
     background-color: white;
-    margin-top: 25px;
+    display: grid;
+    margin-top: 10px;
     width: 700px;
     height: 700px;
     border: 1px solid black;
