@@ -27,6 +27,16 @@ body{
     margin: 50px;
 }
 
+#sketch {
+    color: #ef3550;
+    font-style: oblique;
+    font-size: small;
+    text-decoration: solid;
+    -webkit-text-stroke-color: rgb(99, 12, 1);
+    -webkit-text-stroke-width: 1px;
+    text-decoration: underline;
+}
+
 p {
     color: #008afc;
     font-style: oblique;

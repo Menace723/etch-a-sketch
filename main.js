@@ -1,4 +1,18 @@
-let color = 'black'
+let color = 'black';
+let click = false;
+//clicking to start and stop sketch
+document.querySelector('body').addEventListener('click',function(e){
+    if(e.target.tagName != 'BUTTON'){
+        click = !click;
+        let sketch = document.querySelector('#sketch');
+        if (click){
+            sketch.innerHTML = "click to stop drawing";
+        } else {
+            sketch.innerHTML = "click to start drawing!"
+        }
+    }
+})
+
 const sizeValue = document.getElementById('sizeValue');
 const sizeRange = document.getElementById('sizeRange');
 sizeRange.onchange = (e) => createBoard(e.target.value);
@@ -22,14 +36,14 @@ function createBoard(size){
 }
 
 function draw() {
-    
-    if (color == 'random') {
+    if (click){
+        if (color == 'random') {
         this.style.backgroundColor = `hsl(${Math.random() * 360}, 100%, 50%)`;
     }
     else {
         this.style.backgroundColor = 'black';
     }
-}
+}}
 
 
 function setColor(colorChoice) {
